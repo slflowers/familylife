@@ -115,7 +115,7 @@ body {
 .tabs {
     display: flex;
     min-width: 10rem;
-    background-color: #ADB6B1;
+    background-color: #A877AC;
     justify-content: center;
     
 }
@@ -152,9 +152,9 @@ ul li {
 } */
 
 .tab-content {
-    background-color: #F3F0E9;
+    background-color: #ECECF5;
     padding: 1em 1.5em;
-    /* max-width: 90vw; */
+    width: 100%;
     object-fit: contain;
 }
 
@@ -177,7 +177,7 @@ ul li {
     background-color: white;
     padding: 20px;
     border-radius: 16px;
-    border: #6D6B6C dashed 1.5px;
+    border: #6D6B6C solid 1px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -197,7 +197,7 @@ ul li {
 
 
 .tabs .active {
-    background-color: #D9E0D9;
+    background-color: #d3c2da;
     color: #6D6B6C;
 }
 
