@@ -1,4 +1,4 @@
-let tabs = document.querySelectorAll(".tabs h3");
+let tabs = document.querySelectorAll(".tabs li");
 let tabContents = document.querySelectorAll(".tab-content div");
 
 tabs.forEach ((tab,index) => {
@@ -13,6 +13,8 @@ tabs.forEach ((tab,index) => {
         tabs[index].classList.add("active");
     });
 });
+
+document.getElementById("nav").classList.toggle("change");
 
 let mobileTabs = document.querySelectorAll(".mobile-tabs h3");
 let mobileContents = document.querySelectorAll(".mobile-tab-content div");
