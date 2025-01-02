@@ -14,23 +14,42 @@ tabs.forEach ((tab,index) => {
     });
 });
 
-document.getElementById("nav").classList.toggle("change");
 
-let mobileTabs = document.querySelectorAll(".mobile-tabs h3");
-let mobileContents = document.querySelectorAll(".mobile-tab-content div");
+const navIcon = document.querySelector(".nav-icon");
+const navMenu = document.querySelector(".nav-menu");
 
-mobileTabs.forEach ((tab,index) => {
-    tab.addEventListener("click", () => {
-        mobileContents.forEach(content => {
-            content.classList.remove("active");
-        });
-        mobileTabs.forEach((tab) => {
-            tab.classList.remove("active");
-        });
-        mobileContents[index].classList.add("active");
-        mobileTabs[index].classList.add("active");
-    });
+navIcon.addEventListener("click", () => {
+    // navIcon.classList.toggle(".nav-open");
+    navMenu.classList.toggle("open");
+    
 });
+
+document.querySelectorAll("nav-menu").forEach(n => n.
+    addEventListener("click", () => {
+        navMenu.classList.remove("open");
+    })
+);
+
+
+
+
+// document.getElementById("nav").classList.toggle("change");
+
+// let mobileTabs = document.querySelectorAll(".mobile-tabs h3");
+// let mobileContents = document.querySelectorAll(".mobile-tab-content div");
+
+// mobileTabs.forEach ((tab,index) => {
+//     tab.addEventListener("click", () => {
+//         mobileContents.forEach(content => {
+//             content.classList.remove("active");
+//         });
+//         mobileTabs.forEach((tab) => {
+//             tab.classList.remove("active");
+//         });
+//         mobileContents[index].classList.add("active");
+//         mobileTabs[index].classList.add("active");
+//     });
+// });
 
 // let mobileTabs = document.querySelectorAll(".mobile-tabs h3");
 // let mobileTabContents = document.querySelectorAll("mobile-tab-content div");

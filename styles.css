@@ -8,21 +8,24 @@
 
 body {
     background-color: #fff;
-    margin: 20px;
+    /* margin: 20px; */
+    padding-left: 20px;
+    
 }
 
 .container {
     /* background-color: #ADB6B1; */
-    /* width: 90%; */
-    max-width:fit-content;
-    height: 90%;
+    width: auto;
+    max-width: fit-content;
+    height: 100%;
+    padding: 10px 20px 40px 0;
     position: absolute;
     font-size: 24px;
-    transform: translate(-25%, -50%);
+    /* transform: translate(-25%, -50%);
     top: 50%;
     left: 35%;
     grid-template-columns: 2fr 8fr;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); */
 }
 
 .nav-icon {
@@ -30,6 +33,7 @@ body {
     width: 42px;
     height: 32px;
     cursor: pointer;
+    margin: 20px;
 }
 
 /* hamburger menu + transition */
@@ -204,26 +208,43 @@ ul li {
 
 
 @media screen and (max-width:800px) {
-  .container {
+    body {
+        padding: 0px;
+        
+    }
+  
+    .container {
     background-color: white;
-    
+    padding: 0;
   }  
 
 
   .tabs {
-    display: flex;
-    /* flex-direction: row; */
+    display: grid;
+    place-items: center;
+    justify-content: stretch;
   }
 
   ul {
-    display: flex;
+    /* display: flex; */
     width:100%;
     height: auto;
+    /* padding: 10px 0 20px 0px; */
   }
 
-  nav .tabs ul li {
-    display: inline-block;
+ul li {
+    /* display: inline-block; */
+    /* padding: 16px 0 16px 0; */
+    display: none;
   }
+
+.nav-menu.open li{
+    /* display: inline-block; */
+    display: flex;
+    padding: 16px 0 16px 0;
+
+  }
+
 
   /* .mobile-container {
     font-size: 14px;
