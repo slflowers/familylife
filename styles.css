@@ -14,7 +14,7 @@
     font-family: 'calibri', sans-serif;
     display: grid;
     grid-template-rows: 800px;
-    grid-template-columns: 1450px;
+    grid-template-columns: 1250px;
 
 }
 
@@ -276,6 +276,11 @@ audio::-webkit-media-controls-timeline{
         padding: 0px;
         
     }
+
+    .body-grid {
+        display: flex;
+        margin: 0;
+    }
   
     .container {
     background-color: white;
@@ -287,7 +292,16 @@ audio::-webkit-media-controls-timeline{
     display: grid;
     place-items: center;
     justify-content: stretch;
+    border-radius: 0;
   }
+
+  .tabs .active:first-child {
+    border-radius: 0;
+}
+
+.tabs .active:nth-child(5) {
+    border-radius: 0;
+}
 
   ul {
     /* display: flex; */
