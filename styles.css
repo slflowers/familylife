@@ -6,8 +6,7 @@
     
 }
 
-
-body {
+.body-grid {
     /*remove margin when importing to wordpress*/
     margin-top: 20px;
     margin-left: 20px;
@@ -16,6 +15,7 @@ body {
     display: grid;
     grid-template-rows: 800px;
     grid-template-columns: 1450px;
+
 }
 
 .container {
@@ -32,6 +32,13 @@ body {
     left: 35%;
     grid-template-columns: 2fr 8fr;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); */
+}
+
+
+header {
+    /* background-color: #A877AC;
+    padding: 20px;
+    margin: -20px; */
 }
 
 .nav-icon {
@@ -186,7 +193,7 @@ ul li {
     margin-bottom: 0.5em;
     color: #000024;
     font-weight: 600;
-    /* margin-top: 20px; */
+    margin-top: 20px;
     font-family: tahoma, sans-serif;
 }
 
