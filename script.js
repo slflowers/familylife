@@ -30,6 +30,10 @@ document.querySelectorAll("nav-menu").forEach(n => n.
     })
 );
 
+function clearText() {
+    document.getElementById("nav-icon").value = ""
+};
+
 
 
 

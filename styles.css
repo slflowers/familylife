@@ -13,7 +13,7 @@
     background-color: #fff;
     font-family: 'calibri', sans-serif;
     display: grid;
-    grid-template-rows: 800px;
+    grid-template-rows: 650px;
     grid-template-columns: 1250px;
 
 }
@@ -148,15 +148,16 @@ header {
 
 ul li {
     font-family: tahoma, sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 600;
     height: 100%;
     place-content: center;
     cursor: pointer;
-    color: #F3F0E9;
+    /* color: #F3F0E9; */
+    color: white;
     text-align: center;
     align-self: center;
-    padding: 0 16px 0 16px;
+    padding: 0 8px 0 8px;
 }
 
 /* .tabs h3 {
@@ -172,7 +173,7 @@ ul li {
 
 .tab-content {
     background-color: #ECECF5;
-    padding: 1em 1.5em;
+    padding: 0rem 1rem;
     width: 100%;
     object-fit: contain;
     overflow: auto;
@@ -183,29 +184,29 @@ ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 
 .tab-content h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-bottom: 0.5em;
     color: #000024;
     font-weight: 600;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-family: tahoma, sans-serif;
 }
 
 
 .tab-content .captions {
-    text-align: justify;
-    line-height: 1.4;
+    /* text-align: justify; */
+    line-height: 1.2;
     /* letter-spacing: 0.4px; */
     color: #202238;
-    font-size: 1.2rem;
+    /* font-size: 1.1rem; */
     background-color: white;
-    padding: 20px;
+    padding: 20px 20px;
     border-radius: 16px;
     border: #6D6B6C solid 1px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -357,6 +358,6 @@ ul li {
       }
   
     .tab-content {
-      padding: 1em 1.2em;
+      /* padding: 1em 1.2em; */
     }
   } 
